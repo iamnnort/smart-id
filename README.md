@@ -25,6 +25,3 @@ console.log(generate({ prefix: "cli", size: 32 })); // cli_Yhar8gzYEiU2Buf5dse3Z
 | `prefix`  | Group or entity prefix |
 | `size`    | Hash length            |
 
-## License
-
-This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.

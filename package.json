@@ -1,10 +1,11 @@
 {
   "name": "@iamnnort/smart-id",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "ID generator for Node.js - Unique - Smart - Short",
   "keywords": [
     "id",
-    "uuid"
+    "uuid",
+    "guid"
   ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
