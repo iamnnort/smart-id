@@ -17,7 +17,7 @@ jobs:
         run: yarn install
       - name: Build package
         run: yarn build
-      - name: Publish package on NPM
+      - name: Publish package on GitHub
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
