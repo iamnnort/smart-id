@@ -1,6 +1,6 @@
 {
   "name": "@iamnnort/smart-id",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "ID generator for Node.js - Unique - Smart - Short",
   "keywords": [
     "id",
@@ -22,8 +22,13 @@
   "scripts": {
     "start": "yarn ts-node src/index",
     "build": "tsup",
-    "test": "jest"
+    "lint": "eslint ./src/**/*.ts --fix",
+    "unit": "jest",
+    "test": "yarn lint && yarn unit"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iamnnort/smart-id.git"
@@ -44,6 +49,13 @@
     "ts-jest": "^29.1.1",
     "tsup": "^7.2.0",
     "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^3.0.3"
   }
 }

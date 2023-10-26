@@ -1,6 +1,6 @@
-import { randomBytes } from "crypto";
-import { config } from "./config";
-import { GenerateParams } from "./index.types";
+import { randomBytes } from 'crypto';
+import { config } from './config';
+import { GenerateParams } from './index.types';
 
 export const generate = (params: GenerateParams = {}) => {
   const sugarSize = params?.size || config.sugarSize;
@@ -18,8 +18,8 @@ export const generate = (params: GenerateParams = {}) => {
   }
 
   if (!params.prefix) {
-    return hash.join("");
+    return hash.join('');
   }
 
-  return [params.prefix, hash.join("")].join("_");
+  return [params.prefix, hash.join('')].join('_');
 };
