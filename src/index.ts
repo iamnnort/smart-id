@@ -8,11 +8,7 @@ export const generate = (params: GenerateParams = {}) => {
 
   const hash = [];
 
-  for (
-    let sugarCharIndex = 0;
-    sugarCharIndex < sugarSize;
-    sugarCharIndex += 1
-  ) {
+  for (let sugarCharIndex = 0; sugarCharIndex < sugarSize; sugarCharIndex += 1) {
     const templateChatIndex = sugar[sugarCharIndex] % config.template.length;
     hash[sugarCharIndex] = config.template[templateChatIndex];
   }
