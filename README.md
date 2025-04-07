@@ -5,7 +5,7 @@ ID generator for Node.js - Unique - Smart - Short.
 ## Installation
 
 ```bash
-yarn install @iamnnort/smart-id
+yarn add @iamnnort/smart-id
 ```
 
 ## Usage
